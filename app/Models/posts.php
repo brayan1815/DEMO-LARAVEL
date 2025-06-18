@@ -5,13 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class products extends Model
+class posts extends Model
 {
-    /** @use HasFactory<\Database\Factories\ProductsFactory> */
     use HasFactory;
-
+    
     public function image(){
-        return $this->morphMany(image::class, 'imageable');
+        return $this->morphOne(image::class,'imageable');
     }
-
 }

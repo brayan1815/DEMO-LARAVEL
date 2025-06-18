@@ -19,7 +19,7 @@ class ImageFactory extends Factory
     public function definition(): array
     {
         return [
-            'route' => $this->faker->imageUrl(1200,1600),
+            'route' => $this->faker->imageUrl(1200,1600)
         ];
     }
 }

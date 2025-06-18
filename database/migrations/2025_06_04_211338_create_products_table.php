@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('name')->nullable(false);
             $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')->references('id')->on('categories');
-            $table->unsignedBigInteger('image_id');
-            $table->foreign('image_id')->references('id')->on('images');
+            // $table->unsignedBigInteger('image_id');
+            // $table->foreign('image_id')->references('id')->on('images');
             // $table->decimal('price')->nullable(false);
             // $table->integer('stock')->nullable(false);
             $table->timestamps();
